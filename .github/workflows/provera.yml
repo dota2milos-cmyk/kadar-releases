@@ -1,0 +1,9 @@
+name: Provera
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  mac:
+    runs-on: macos-latest
+    steps:
+      - run: sw_vers && uname -m
